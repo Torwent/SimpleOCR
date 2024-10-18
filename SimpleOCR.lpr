@@ -147,7 +147,7 @@ initialization
     'function TSimpleOCR._GetColorsMatrix(B: TBox): TIntegerMatrix; static;',
     'begin',
     '  {$IFDEF SIMBAMAJOR2000}',
-    '  Result := Finder.GetColorsMatrix(B);',
+    '  Result := Target.GetColorsMatrix(B);',
     '  {$ELSE}',
     '  Result := GetColorsMatrix(B.X1, B.Y1, B.X2, B.Y2);',
     '  {$ENDIF}',
