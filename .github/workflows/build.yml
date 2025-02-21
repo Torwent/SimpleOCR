@@ -64,7 +64,7 @@ jobs:
           lazbuild --build-mode=${{ matrix.config.build-mode }} SimpleOCR.lpi
 
       - name: Upload Binary 
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.config.binary }}
           path: ${{ matrix.config.binary }}
